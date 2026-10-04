@@ -1,0 +1,21 @@
+{
+  "name": "pi-output-timestamps",
+  "version": "1.0.0",
+  "description": "Stamp the time each assistant output block and command block started appearing in the Pi transcript.",
+  "keywords": [
+    "pi-package"
+  ],
+  "license": "MIT",
+  "pi": {
+    "extensions": [
+      "./extensions/output-timestamps.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "scripts": {
+    "test": "node --test --experimental-strip-types \"tests/*.test.mjs\""
+  }
+}
